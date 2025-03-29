@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Informativa CSS</title>
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#javascript">JavaScript</a></li>
+            <li><a href="#tabla">Tabla de Atributos CSS</a></li>
+        </ul>
+    </nav>
+    
+    <section id="css">
+        <h2>CSS</h2>
+        <p>CSS es un lenguaje de diseño gráfico que se utiliza para definir la apariencia de los sitios web. 
+            Permite controlar el color, la fuente, la posición, las animaciones y los efectos visuales de los elementos de una página web. </p>
+        <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
+            <img src="imagenes/1.png" alt="Logo de CSS" class="imagen-representativa"> </a>
+    </section>
+    
+    <section id="javascript">
+        <h2>JavaScript</h2>
+        <p>JavaScript es un lenguaje de programación de alto nivel, interpretado y orientado a objetos, 
+            ampliamente utilizado para crear páginas web interactivas y dinámicas, así como aplicaciones web 
+            y de escritorio. </p>
+        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
+            <img src="imagenes/2.png" alt="Logo de JavaScript" class="imagen-representativa"> </a>
+    </section>
+    
+    <section id="tabla">
+        <h2>Tabla de Atributos CSS</h2>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Nombre del Atributo</th>
+                    <th>Descripción</th>
+                    <th>Valores Posibles</th>
+                    <th>Ejemplo</th>
+                    <th>Imagen</th>
+                    <th>Fuente De Informacion</th>
+                </tr>
+                <tr>
+                    <td>font-size</td>
+                    <td>especifica la dimensión de la letra. Este tamaño puede, a su vez, 
+                        alterar el aspecto de alguna otra cosa, ya que se usa para calcular 
+                        la longitud de las unidades </td>
+                    <td> xx-small, x-small, small, medium, large, x-large, xx-large</td>
+                    <td>fron-size &lt;longitud&gt; &lt;porcentaje&gt;</td>
+                    <td><img src="imagenes/3.png" width="150" height="150"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/font-size">Enlace</a></td>
+                </tr>
+                <tr>
+                    <td>border-radius</td>
+                    <td>redondea las esquinas del borde exterior de un elemento. Puedes establecer un único 
+                        radio para crear esquinas circulares o dos radios para crear esquinas elípticas.</td>
+                    <td>radio,esquina_superior-izquierda-y-esquina-inferior-derecha</td>
+                    <td>border-radius: 10px;</td>
+                    <td><img src="imagenes/4.png" width="150" height="150"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/border-radius">Enlace</a></td>
+                </tr>
+                <tr>
+                    <td>display</td>
+                    <td>Define como se muestra un ejemplo en la pagina</td>
+                    <td>block,inline,flex,grid,etc</td>
+                    <td>display: flex;</td>
+                    <td><img src="imagenes/5.png" width="150" height="150"></a></td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">Enlace</a></td>
+                </tr>
+                <tr>
+                    <td>flexbox (display:flex)</td>
+                    <td>Activa el modelo de caja flexible para distribuir elementos de un contenedor</td>
+                    <td>flex,inline-flex</td>
+                    <td>display:flex; justify-content:center;</td>
+                    <td><img src="imagenes/6.png" width="150" height="150"></td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox">Enlace</a></td>
+                </tr>
+                <tr>
+                    <td>position</td>
+                    <td>Especifica la posición de un elemento en el documento</td>
+                    <td>static,relative,absolute,fixes,sticky</td>
+                    <td>&lt;position&gt;=[left|center|right|top|bottom|&lt;length-percentage&gt;]|</td>
+                    <td><img src="imagenes/7.png" width="150" height="150"></td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position_value">Enlace</a></td>
+                </tr>
+                <tr>
+                    <td>box-shadow</td>
+                    <td>Agrega sobra a un elemento para mejorar su apariencia visual</td>
+                    <td>none,offset-x,offset-y,blur-radius</td>
+                    <td>div{box-shadow:10px10px;}</td>
+                    <td><img src="imagenes/8.png" width="150" height="150"></td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow">Enlace</a></td>
+                </tr>
+                <tr>
+                    <td>overflow</td>
+                    <td>controla como se maneja el contenido que excede el tamaño de su contenedor</td>
+                    <td>visible,hidden,scroll,auto</td>
+                    <td>overflow: visible, overflow: hidden, overflow: scroll, overflow: auto, overflow: inherit</td>
+                    <td><img src="imagenes/9.png" width="150" height="150"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/overflow">Enlace</a></td>
+                </tr>
+                <tr>
+                    <td>z-index</td>
+                    <td>controla la superposicioon de elementos en el eje Z</td>
+                    <td>Valores numericos(positivos o negativos)</td>
+                    <td>z-index:auto|&lt;entero&gt;|inherit</td>
+                    <td><img src="imagenes/10.png" width="150" height="150"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/z-index">Enlace</a></td>
+                </tr>
+                <tr>
+                    <td>opacity</td>
+                    <td>Ajusta la transparencia de un elemento</td>
+                    <td>Valores entre 0 que seria transparente y 1 que es opaco</td>
+                    <td>opacity: 0.5;</td>
+                    <td><img src="imagenes/11.png" width="150" height="150"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/opacity">Enlace</a></td>
+                </tr>
+                <tr>
+                    <td>margin y padding</td>
+                    <td>margin Define el espacio fuera del borde de un elemento mientras que paddig define el espacio
+                        dentro del borde</td>
+                    <td>valores en px,%,auto,etc</td>
+                    <td>margin:20px,padding:10px;</td>
+                    <td><img src="imagenes/12.png" width="150" height="150"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/margin">margin</a></td>
+                </tr>
+                <tr>
+                    <td>border-radius</td>
+                    <td>Redondea las esquinas de un elemento.</td>
+                    <td>Valores en px,%(Ej:10px,50%)</td>
+                    <td>border-radius:10px;</td>
+                    <td><img src="imagenes/13.png" width="150" height="150"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/border-radius">Enlace</a></td>
+                </tr>
+                <tr>
+                    <td>text-align</td>
+                    <td>Controla la alineación del texto dentro de un elemento.</td>
+                    <td>left,right,center,justify</td>
+                    <td>text-alling:center;</td>
+                    <td><img src="imagenes/14.png" width="150" height="150"></td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">Enlace</a></td>
+                </tr>
+                <tr>
+                    <td>background-image</td>
+                    <td>permite establecer una imagen como fondo de un elemento</td>
+                    <td>url("imagen.png),linear-gradient(),none</td>
+                    <td>background-image:url("fondo.jpg")</td>
+                    <td><img src="imagenes/background-image.jpg" width="150" height="150"></td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-image">Enlace</a></td>
+                </tr>
+                <tr>
+                    <td>cursor</td>
+                    <td>define el tipo de curso que se mostrara al pasar sobre un elemento</td>
+                    <td>default,pointer,text,move,etc</td>
+                    <td>cursor: pointer;</td>
+                    <td><img src="imagenes/16.png" width="150" height="150"></td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/cursor">Enlace</a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

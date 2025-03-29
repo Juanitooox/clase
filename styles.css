@@ -1,0 +1,80 @@
+/* Estilos generales de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #576eca;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del menú de navegación */
+.menu {
+    list-style: none;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.menu li {
+    padding: 15px 20px;
+}
+.menu li a {
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s; /* Transición suave para el cambio de color */
+}
+.menu li a:hover {
+    background-color: yellow; /* Cambio de color al pasar el cursor */
+    color: black;
+}
+
+/* Estilos de las secciones */
+section {
+    padding: 20px;
+    margin: 20px;
+    background: rgb(208, 208, 208);
+    border: 1px solid #ddd;
+}
+
+/* Estilos para el contenedor de la tabla */
+.table-container {
+    overflow-x: auto; /* Permite el scroll horizontal */
+    width: 100%;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse; /* Combina los bordes de las celdas */
+    min-width: 800px; /* Asegura un ancho mínimo para evitar que se comprima demasiado */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px; /* Reduje el padding para que quepa más contenido */
+    text-align: left;
+    white-space: nowrap; /* Evita que el texto se rompa */
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+/* Estilos para las imágenes representativas */
+.imagen-representativa {
+    width: 100px;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 600px) {
+    table {
+        font-size: 12px; /* Reduce el tamaño de la fuente */
+    }
+
+    th, td {
+        padding: 5px; /* Reduce el padding */
+    }
+}
